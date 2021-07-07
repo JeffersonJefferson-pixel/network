@@ -1,0 +1,68 @@
+#profile_view .info, .like_div {
+    display: flex;
+}
+
+label, .post_container .username, #profile_username {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.like_div {
+    align-items: center;
+}
+
+.like_num {
+    margin-left: 10px;
+}
+
+.like {
+    color:rgb(108, 108, 108)
+}
+
+
+.unlike {
+    color: red;
+}
+
+.username:hover{
+    cursor: pointer;
+}
+
+.comment:hover{
+    cursor: pointer;
+}
+
+.edit:hover{
+    cursor: pointer;
+}
+
+.username {
+    text-transform: capitalize;
+}
+
+.container, .post_container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#new_post_content {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.edit {
+    color: blue;
+}
+
+.timestamp, .comment, .like_num {
+    color: rgb(108, 108, 108);
+}

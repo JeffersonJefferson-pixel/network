@@ -1,0 +1,42 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h1>All Posts</h1>
+    <div id="create_post_view" class="container">
+        <label for="create_post">New Post</label>
+        <form id="create_post_form">
+            <textarea id="new_post_content"></textarea>
+            <input type=submit id="post_button" class="btn btn-primary" value="Post">
+        </form>
+    </div>
+
+    <div id="profile_view" class="container">
+        <div id="profile_username" class="username"></div>
+        <div class="info">
+            <div>Follower: </div>
+            <div id="num_follower"></div>
+        </div>
+        <div class="info">
+            <div>Following: </div>
+            <div id="num_following"></div>
+        </div>
+        <button id="follow_button" class="btn btn-outline-primary">Follow</button>
+    </div>
+
+    <div id="post_view">
+        <!--<div class="poster">{{post.poster}}</div>
+        <div class="edit">edit</div>
+        <p class="content">{{post.content}}</p>
+        <div class="timestamp">{{post.timestamp}}</div>
+        <div>Likes: {{post.like}}</div>
+        <div class="comment">comment</div>-->
+    </div>
+
+   
+
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}
